@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Surl</h1>
+    <h3>Done!</h3>
+    <hr>
+    <p>Here's the shorter version for <%= url.url %>:</p>
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <p><input class="form-control" style="text-align: center;" type="text" readonly value="<%= sails.config.application.baseUrl + '/redirect/' + url.id %>" /></p>
+      </div>
+    </div>
+
+    <hr>
+    <p><a href="/">Go back, and create another short url!</a></p>
+  </div>
+</div>
